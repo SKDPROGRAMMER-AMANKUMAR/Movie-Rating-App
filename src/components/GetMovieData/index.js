@@ -1,5 +1,5 @@
 const BaseURL = "http://www.omdbapi.com/?";
-const apikey = `${process.env.APIKEY}`;
+const apikey = "c1603f59";
 
 // Function to fetch movie data
 export const getMovieData = async (movieName,setMovieData) => {

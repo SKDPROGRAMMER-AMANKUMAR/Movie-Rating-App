@@ -10,7 +10,7 @@ const Parent = () => {
       {/* Cinematic Background Elements */}
       <div className="fixed  inset-0 overflow-hidden pointer-events-none">
         {/* Film grain effect */}
-        <div className="absolute  top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] mix-blend-overlay"></div>
+        <div className="absolute  top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.03] mix-blend-overlay z-10"></div>
         
         {/* Animated spotlight effects */}
         <div className="absolute -top-1/4 -left-1/4 w-1/2 h-1/2 bg-blue-500/10 rounded-full mix-blend-screen filter blur-[160px] animate-spotlight"></div>
@@ -198,6 +198,22 @@ const Parent = () => {
           </div>
         </div>
       </div>
+
+      {/* Footer Section */}
+      <footer className="relative z-10 mt-8 pb-6">
+        <div className="container mx-auto px-4">
+          <div className="bg-black/30 backdrop-blur-xl rounded-2xl p-4 border border-white/10 shadow-lg">
+            <p className="text-white/70 text-center text-sm flex items-center justify-center gap-2">
+              <img 
+                src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg" 
+                alt="TMDB Logo" 
+                className="w-6 h-6"
+              />
+              This product uses the TMDB API but is not endorsed or certified by TMDB.
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   )
 }
